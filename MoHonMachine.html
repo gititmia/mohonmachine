@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang='en'>
+	<meta charset="utf-8">
+	<meta name='viewport' content="width=device-width, initial-scale=1.0">
+</html>
+<title>Mỏ Hỗn Machine</title>
+</head>
+
+<body>
+	<h2 class="title">Mỏ Hỗn Machine</h2>
+	<div class="panel" id="drum-machine">
+		<div id="instruction">Nhấn nút để gặp mẹ trong mơ</div>
+		<div id="buttons-1"><h3 class="panel-title">Beat</h3>
+			<button class="drum-pad" data-key="Q" id="kim-chi">
+				<audio class="clip" id="Q" src="https://drive.google.com/uc?id=1Wgfwx2V53CF86ZK6l6tHvKO2zOZZdjPU" type="audio/mpeg"></audio>Q</button>
+
+			<button class="drum-pad" data-key="W" id="boom">
+				<audio class="clip" id="W" src="https://drive.google.com/uc?id=1cE5QXHb9iI0vj4PHfUeVa-FSRzJGVYxH" type="audio/mpeg"></audio>W</button>
+
+			<button class="drum-pad" data-key="E" id="tieng-man">
+				<audio class="clip" id="E" src="https://drive.google.com/uc?id=1HELSZ9894LqefhlFG25MvIPKcnHEcL4T" type="audio/mpeg"></audio>E</button>
+			<br></br>
+
+			<button class="drum-pad" data-key="A" id="wtf">
+				<audio class="clip" id="A" src="https://drive.google.com/uc?id=1LQmkcc3NYHg7PM6Ww-DwpB_kl4yJlYys" type="audio/mpeg"></audio>A</button>
+
+			<button class="drum-pad" data-key="S" id="hyhyhy">
+				<audio class="clip" id="S" src="https://drive.google.com/uc?id=1UeJ4aagYCjzCwTq6GuCs9LEBrPSzT5av" type="audio/mpeg"></audio>S</button>
+
+			<button class="drum-pad" data-key="D" id="peppa">
+				<audio class="clip" id="D" src="https://drive.google.com/uc?id=1VjE1Oap-2L75wb-lX2gILWLODPVmJ1_X" type="audio/mpeg"></audio>D</button>
+			<br></br>
+
+			<button class="drum-pad" data-key="Z" id="meow">
+				<audio class="clip" id="Z" src="https://drive.google.com/uc?id=1OCeh7st42Lkz-41ZZzD--XXUqe-CoHrA" type="audio/mpeg"></audio>Z</button>
+
+			<button class="drum-pad" data-key="X" id="bruh">
+				<audio class="clip" id="X" src="https://drive.google.com/uc?id=1mA3cVAWJTp9xZogO1mBqL5yPtQveU2LE" type="audio/mpeg"></audio>X</button>
+
+			<button class="drum-pad" data-key="C" id="shook">
+				<audio class="clip" id="C" src="https://drive.google.com/uc?id=1Fqya3XqyMwF4OdSgsd4_8t2eI2v6J1GP" type="audio/mpeg"></audio>C</button>
+		</div>
+		<div id="buttons-2"><h3 class="panel-title">Nhạc</h3>
+			<button class="drum-pad" data-key="I" id="hanh-phuc">
+				<audio class="clip" id="I" src="https://drive.google.com/uc?id=1zoIUxs2ZOi1IdYSfvy3G7Frc10RdNrsK " type="audio/mpeg"></audio>I</button>
+
+			<button class="drum-pad" data-key="O" id="tinh-yuh">
+				<audio class="clip" id="O" src="https://drive.google.com/uc?id=1BKbFVmKYVStM2A7ELNEjIOt7KxtgK479" type="audio/mpeg"></audio>O</button>
+
+			<button class="drum-pad" data-key="P" id="sau-tim">
+				<audio class="clip" id="P" src="https://drive.google.com/uc?id=1mKbASFJ7KCHyKLx-7_SE2bm76WaVeujq" type="audio/mpeg"></audio>P</button>
+			<br></br>
+
+			<button class="drum-pad" data-key="J" id="the-nao">
+				<audio class="clip" id="J" src="https://drive.google.com/uc?id=1T8v4RMBOeagu6nRZw1SciMD3F_fO29oc" type="audio/mpeg"></audio>J</button>
+
+			<button class="drum-pad" data-key="K" id="mailisa">
+				<audio class="clip" id="K" src="https://drive.google.com/uc?id=1EoGEGSomfmlzpul_LT4GZIJKgAb5Ylzc" type="audio/mpeg"></audio>K</button>
+
+			<button class="drum-pad" data-key="L" id="tinh-iu">
+				<audio class="clip" id="L" src="https://drive.google.com/uc?id=16EprXNpyo6GGn04Rq2PMeerC4-dmQymy" type="audio/mpeg"></audio>L</button>
+			<br></br>
+
+			<button class="drum-pad" data-key="B" id="lo-to">
+				<audio class="clip" id="B" src="https://drive.google.com/uc?id=10lD7bC38Z4a46w4rA_-lXQ7wrqrzMOhO" type="audio/mpeg"></audio>B</button>
+
+			<button class="drum-pad" data-key="N" id="my-loc">
+				<audio class="clip" id="N" src="https://drive.google.com/uc?id=16ng57RD7cJCqy1uJhbuyv1qiA9DbhS5L" type="audio/mpeg"></audio>N</button>
+
+			<button class="drum-pad" data-key="M" id="ngon-qua">
+				<audio class="clip" id="M" src="https://drive.google.com/uc?id=19g9x8FbiyAM6tGDK2LaoXrYSpJi2nQLG" type="audio/mpeg"></audio>M</button>
+		</div>
+	</div>
+
+	<div id="display"></div>
+
+<style type="text/css">
+	html {
+		background-color: #ffd5cc;
+
+	}
+	.title {
+		font-family: system-ui;
+		margin: 0 auto;
+		text-align: center;
+		padding-top: 15px;
+	}
+
+	#instruction {
+		font-family: system-ui;
+		margin: 0 auto;
+		text-align: center;
+		padding-top: 20px;
+	}
+
+	#display {
+		font-family: system-ui;
+		font-size: 20px;
+		margin: 0 auto;
+		text-align: center;
+		padding-top: 400px;
+	}
+
+	.panel-title {
+		font-family: system-ui;
+		text-align: center;
+	}
+
+	button {
+		width: 90px;
+		height: 90px;
+		font-family: system-ui;
+		font-size: 20px;
+		background-color: #ffc2e2;
+		transition: background-color 0.2s;
+		border-radius: 10px;
+	}
+
+	#buttons-1 {
+		position: absolute;
+		top: 40%;
+		left: 35%;
+        transform: translate(-50%, -50%);
+	}
+
+	#buttons-2 {
+		position: absolute;
+		top: 40%;
+		right: 15%;
+		transform: translate(-50%, -50%);
+	}
+
+	.clicked {
+		background-color: hotpink;
+	}
+
+</style>
+
+<script type="text/javascript">
+	const keyToAudio = {
+		Q: 'Q',
+		W: 'W',
+		E: 'E',
+		A: 'A',
+		S: 'S',
+		D: 'D',
+		Z: 'Z',
+		X: 'X',
+		C: 'C',
+		I: 'I',
+		O: 'O',
+		P: 'P',
+		J: 'J',
+		K: 'K',
+		L: 'L',
+		B: 'B',
+		N: 'N',
+		M: 'M'
+	};
+
+	const descriptions = {
+    Q: 'Oa kim chi đỏ ao',
+    W: 'bOoM',
+    E: 'Tiếng mán',
+    A: 'Quác tờ phắc',
+    S: 'Hý hý hý',
+    D: 'Pé heo Minh Hằng',
+    Z: 'nGoEo',
+    X: 'brờh',
+    C: 'sIdE eYe',
+    I: 'Ngôi nhà hạnh fuck',
+	O: 'Nơi tình yuh bắt đầu',
+	P: 'Sầu tím thiệp yuh',
+	J: 'Dới mày như thế nào mới được gọi là đẹp?',
+	K: 'Sếp em Mailisa',
+	L: 'Tình iu em chao cho anh',
+	B: 'Bê đê khắp mọi miền quê',
+	N: 'Bà Mỹ Lộc mở cửa',
+	M: 'Ngon quá à'
+
+  }
+ const buttons = document.querySelectorAll('.drum-pad');
+
+    buttons.forEach(button => {
+    	button.addEventListener('click', () => {
+    		const key = button.getAttribute('data-key');
+    		if (keyToAudio[key]) {
+    			const description = descriptions[key];
+    			updateDisplay(description);
+    			playAudio(keyToAudio[key]);
+    			button.classList.add('clicked');
+    			setTimeout(() => {
+    				button.classList.remove('clicked');
+    			}, 200);
+    		}
+    	});
+    });
+
+    document.addEventListener('keydown', (event) => {
+    	const key = event.key.toUpperCase();
+    	const button = document.querySelector(`[data-key="${key}"]`);
+    	if (button && keyToAudio[key]) {
+    		const description = descriptions[key];
+    		updateDisplay(description);
+    		playAudio(keyToAudio[key]);
+    		button.classList.add('clicked');
+    		setTimeout(() => {
+    			button.classList.remove('clicked');
+    		}, 200);
+    	}
+    });
+
+    function playAudio(audioId) {
+        const audio = document.getElementById(audioId);
+        audio.currentTime = 0;
+        audio.play();
+    }
+
+    function updateDisplay(description) {
+        const display = document.getElementById('display');
+        display.innerText = `Sound: ${description}`;
+        setTimeout(() => {
+            display.innerText = '';
+        }, 2000);
+    }
+</script>
+</body>
+</html>
